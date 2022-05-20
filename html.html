@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Portfolio</title>
+</head>
+<body>
+<header>
+  <button type="button" class="icon" onclick="show('h')">-</button>
+  <div class="hamburger" id="h">
+    <a href="#home">Home</a>
+    <a href="#about">About me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contacts">Contacts</a>
+  </div>
+  <section id="home">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+    <h1>Mustafa Firuzan, Front-end developer</h1>
+  </section>
+</header>
+
+<main>
+  <section id="about">
+    <div id="effect">
+      <img src="site/image.jpg" alt="">
+      <img src="images/person.jpg" alt="">
+    </div>
+
+    <div id="info">
+      <h2>About me</h2>
+      <p>Hi, I'm Mustafa Firuzan.</p>
+      <p><strong>Skills: </strong>HTML, CSS, JS, React.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div id="pr1" class="window">
+      <h1>Flashcards</h1>
+      <button onclick="hide('f')">Close</button>
+    </div>
+    <div id="pr2" class="window">
+      <h1>Virtual Piano</h1>
+      <button onclick="hide('s')">Close</button>
+    </div>
+    <h2>Portfolio</h2>
+    <div id="projects">
+      <div id="project1">
+        <img src="site/project1.png" alt="">
+        <p>Flashcards</p>
+        <button type="button" class="open-window" id="f" onclick="show('f')">How was created!</button>
+      </div>
+
+      <div id="project2">
+        <img src="site/project2.png" alt="">
+        <p>Virtual Piano</p>
+        <button type="button" class="open-window" onclick="show('s')">How was created!</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h3>Contact me via socials: </h3>
+
+    <div style="display: flex" id="images">
+      <img src="images2/github.svg" alt="">
+      <img src="images2/twitter.svg" alt="">
+      <img src="images2/facebook.svg" alt="">
+      <img src="images2/instagram.svg" alt="">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <h1>Mustafa Firuzan</h1>
+  <h2>2022</h2>
+</footer>
+<script src="javascript.js"></script>
+</body>
+</html>
